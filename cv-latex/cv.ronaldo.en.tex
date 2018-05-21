@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.3, 30 April 2017) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[9pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{2d7788}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Ronaldo Drumond}
+\tagline{Software Developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{profile}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ronaldo.drumond@outlook.com}
+  \phone{+33 7 68 91 94 17}
+  \homepage{\url{www.ronaldodrum.com}}
+  \mailaddress{Rue des Taillées, 107, C414, 38400 France}
+  \location{Saint Martin d'Hères}
+
+  %\twitter{@ronaldodrum}
+  %\linkedin{linkedin.com/in/ronaldodrumond}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar.en]{Experience}
+
+\cvevent{System Administrator Intern}{French National Center for Scientific Research (CNRS)}{March 2018 -- June 2018}{Grenoble, France}
+
+Research, installation and configuration of a data center management infrastructure (DCIM), solution to manage and monitor the data center of the computer networks center at CNRS Alpes. Update the file hosting services as a second project. 
+
+\divider
+
+\cvevent{Software Developer Intern}{Pris}{Apr 2017 -- Aug 2017}{Belo Horizonte, Brazil}
+
+Collaborated in developing a system in intellectual property business, using the framework MVC ASP NET and Microsoft SQL Server. 
+
+\divider
+
+\cvevent{Software Developer Intern}{Assertis}{Aug 2016 -- Feb 2017}{Gdansk, Poland}
+
+Collaborated in developing BDD tests and improvements for the Assertis’s rail tickets web-sites, using PHP language, XSL and SQL. Internship by International Association for the Exchange of Students for Technical Experience (IAESTE).
+
+\divider
+
+\cvevent{Software Developer Intern}{Axxiom}{Jul 2015 -- Aug 2016}{Belo Horizonte, Brazil}
+
+Collaborated in developing improvements for the Control System Operating (SICOP) at CEMIG TELECOM, using Java Web.
+
+\divider
+
+\cvevent{Software Developer Volunteer}{PROGEST}{Aug 2015 -- Aug 2016}{Belo Horizonte, Brazil}
+
+Voluntary participation as part of the software development team, implementing the project site and helping in the creation of an academic system using WordPress and CakePHP, at PROGEST (Engineering, Society and Technology Studies Program).
+
+\divider
+
+\cvevent{Junior Researcher}{Brazilian National Council for Scientific and Technological Development (CNPq)}{Feb 2014 -- Jul 2015}{Belo Horizonte, Brazil}
+
+Conducted research on application performance scientific multi-thread, concurrently running processes in a cluster. Studied models of concurrently programming and used the messaging model – model Actors by Akka tool and Java programming language. Found satisfactory results to refactor applications needed to improve processing.
+
+\divider
+
+\cvevent{Tutor of Programming}{Federal Center for Technological Education of Minas Gerais (CEFET-MG)}{Sep 2013 -- Jan 2014}{Belo Horizonte, Brazil}
+
+Tutor of Computer Programming Language, available to answer questions, reinforce theoretical and practical skills for structured programming (language C).
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\clearpage
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
